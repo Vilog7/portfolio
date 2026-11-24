@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VIHAAN — Dark, Cinematic, Creative, Futuristic Personal Portfolio. Multidisciplinary digital creator, designer, video editor, and developer.">
+  <meta name="theme-color" content="#080808">
+  <title>VIHAAN — Cinematic 3D Portfolio</title>
+
+  <!-- Fonts with strong system fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip to Main Content (Keyboard Accessibility) -->
+  <a href="#intro" class="skip-link">Skip to portfolio</a>
+
+  <!-- Top GPU Reading Progress Bar -->
+  <div class="scroll-progress-track" aria-hidden="true">
+    <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Floating Navigation -->
+  <header id="navbar" class="navbar" role="banner">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand" aria-label="VIHAAN Home">
+        <span class="nav-brand-dot" aria-hidden="true"></span>
+        <span class="nav-brand-text">VIHAAN</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link is-active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile Navigation" hidden>
+      <a href="#home" class="mobile-nav-link is-active" data-section="home">Home</a>
+      <a href="#about" class="mobile-nav-link" data-section="about">About</a>
+      <a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a>
+      <a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a>
+      <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- =========================================================
+         SECTION 1: CINEMATIC HERO & SCROLL-CONTROLLED SEQUENCE
+         ========================================================= -->
+    <section id="home" class="hero-sequence" aria-label="Cinematic Introduction">
+      <div id="hero-sticky" class="hero-sticky">
+        <!-- Consistent Textured Concrete Background -->
+        <div class="hero-concrete-bg" aria-hidden="true"></div>
+
+        <!-- Stage 2–4: Giant Red VIHAAN Typography Layer -->
+        <div id="hero-typography-layer" class="hero-typography-layer" aria-hidden="true">
+          <div id="hero-wordmark" class="hero-wordmark">VIHAAN</div>
+        </div>
+
+        <!-- Stage 3: Full-Screen Red Immersion Layer -->
+        <div id="hero-red-flood" class="hero-red-flood" aria-hidden="true"></div>
+
+        <!-- Stage 1–2: Original Hero Photograph Layer -->
+        <div id="hero-photo-layer" class="hero-photo-layer">
+          <img
+            src="assets/vihaan.jpg"
+            alt="Vihaan wearing a black suit and sunglasses in front of giant red VIHAAN typography"
+            class="hero-photo"
+            width="1024"
+            height="571"
+            fetchpriority="high"
+            decoding="async"
+          >
+        </div>
+
+        <!-- Subtle Cinematic Edge Vignette -->
+        <div id="hero-vignette" class="hero-vignette" aria-hidden="true"></div>
+
+        <!-- Stage 4: Atmospheric Dark Transition Veil -->
+        <div id="hero-transition-veil" class="hero-transition-veil" aria-hidden="true"></div>
+
+        <!-- Subtle Scroll Indicator (Stage 1) -->
+        <div id="hero-scroll-cue" class="hero-scroll-cue" aria-hidden="true">
+          <span class="scroll-cue-label">SCROLL TO ENTER</span>
+          <span class="scroll-cue-line">
+            <span class="scroll-cue-beam"></span>
+          </span>
+        </div>
+
+        <!-- Minimal Chapter Progress Indicator -->
+        <div id="hero-chapter-hud" class="hero-chapter-hud" aria-hidden="true">
+          <span id="hero-chapter-num" class="hero-chapter-num">01</span>
+          <span class="hero-chapter-sep">/</span>
+          <span class="hero-chapter-total">04</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 2: PORTFOLIO REVEAL
+         ========================================================= -->
+    <section id="intro" class="section reveal-hero-section" aria-labelledby="intro-heading">
+      <div class="container intro-container">
+        <div class="eyebrow reveal-up">
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          <span>DARK &bull; CINEMATIC &bull; CREATIVE &bull; FUTURISTIC</span>
+        </div>
+
+        <h1 id="intro-heading" class="intro-title reveal-up">
+          HI, I'M <span class="text-accent-red">VIHAAN.</span>
+        </h1>
+
+        <p class="intro-subtitle reveal-up">
+          Creative Mind. Technical Skills. Unlimited Possibilities.
+        </p>
+
+        <p class="intro-description reveal-up">
+          I'm a multidisciplinary creator passionate about building digital experiences, designing interfaces, editing visuals, and developing powerful applications.
+        </p>
+
+        <ul class="intro-disciplines reveal-up" aria-label="Core disciplines">
+          <li>Video Editing</li>
+          <li>UI/UX Design</li>
+          <li>Web Development</li>
+          <li>Android Apps</li>
+        </ul>
+
+        <div class="intro-actions reveal-up">
+          <a href="#projects" class="btn btn-primary">
+            <span class="btn-label">EXPLORE MY WORK</span>
+            <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span class="btn-label">LET'S CONNECT</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 3: ABOUT ME
+         ========================================================= -->
+    <section id="about" class="section about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">01 / IDENTITY</span>
+          <h2 id="about-heading" class="section-title">BEHIND THE SCREEN.</h2>
+          <p class="section-lead">
+            I operate at the intersection of visual storytelling and software engineering — crafting cinematic edits, intuitive interfaces, and full-stack applications that feel alive.
+          </p>
+        </div>
+
+        <div class="roles-grid">
+          <article class="role-card tilt-card reveal-up" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="role-card-inner">
+              <div class="role-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 9l5 3-5 3V9z"/></svg>
+              </div>
+              <h3 class="role-title">Video Editor</h3>
+              <p class="role-desc">Rhythm-driven cuts, atmospheric color grading, sound design, and cinematic pacing built to command attention.</p>
+            </div>
+          </article>
+
+          <article class="role-card tilt-card reveal-up" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="role-card-inner">
+              <div class="role-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><circle cx="17.5" cy="17.5" r="3.5"/></svg>
+              </div>
+              <h3 class="role-title">UI/UX Designer</h3>
+              <p class="role-desc">Human-centered user journeys, precision wireframes, and sleek dark-mode interfaces with effortless clarity.</p>
+            </div>
+          </article>
+
+          <article class="role-card tilt-card reveal-up" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="role-card-inner">
+              <div class="role-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3 class="role-title">Frontend Developer</h3>
+              <p class="role-desc">Fluid micro-interactions, GPU-accelerated motion, and responsive architectures engineered pixel by pixel.</p>
+            </div>
+          </article>
+
+          <article class="role-card tilt-card reveal-up" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="role-card-inner">
+              <div class="role-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+              </div>
+              <h3 class="role-title">Web Developer</h3>
+              <p class="role-desc">End-to-end modern web experiences balancing high performance, accessibility, and unmistakable visual presence.</p>
+            </div>
+          </article>
+
+          <article class="role-card tilt-card reveal-up" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="role-card-inner">
+              <div class="role-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><circle cx="7" cy="7" r="1" fill="currentColor"/><circle cx="7" cy="17" r="1" fill="currentColor"/></svg>
+              </div>
+              <h3 class="role-title">Backend Developer</h3>
+              <p class="role-desc">Reliable APIs, structured databases, and scalable server logic powering seamless real-world applications.</p>
+            </div>
+          </article>
+
+          <article class="role-card tilt-card reveal-up" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="role-card-inner">
+              <div class="role-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="2" width="12" height="20" rx="2.5"/><line x1="10" y1="18" x2="14" y2="18"/></svg>
+              </div>
+              <h3 class="role-title">App Developer</h3>
+              <p class="role-desc">Purpose-built Android applications designed for speed, tactile responsiveness, and clean everyday utility.</p>
+            </div>
+          </article>
+
+          <article class="role-card tilt-card reveal-up" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="role-card-inner">
+              <div class="role-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+              </div>
+              <h3 class="role-title">Creative Designer</h3>
+              <p class="role-desc">Bold visual direction, poster-grade typography, brand aesthetics, and atmospheric digital art direction.</p>
+            </div>
+          </article>
+
+          <article class="role-card tilt-card reveal-up" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="role-card-inner">
+              <div class="role-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <h3 class="role-title">Digital Creator</h3>
+              <p class="role-desc">Blending storytelling, design, and technology to turn ambitious ideas into memorable digital realities.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 4: SKILLS
+         ========================================================= -->
+    <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">02 / CAPABILITIES</span>
+          <h2 id="skills-heading" class="section-title">THE ARSENAL.</h2>
+          <p class="section-lead">
+            Three core pillars uniting visual craft, interface thinking, and full-stack engineering.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- CREATIVE -->
+          <article class="skill-card skill-card--creative tilt-card reveal-up" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="skill-card-head">
+              <span class="skill-index">01</span>
+              <h3 class="skill-category-title">CREATIVE</h3>
+            </div>
+
+            <div class="skill-visual skill-visual--wave" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span>
+            </div>
+
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-bullet" aria-hidden="true"></span>
+                <span>Video Editing</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet" aria-hidden="true"></span>
+                <span>Motion Graphics</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet" aria-hidden="true"></span>
+                <span>Visual Design</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- DESIGN -->
+          <article class="skill-card skill-card--design tilt-card reveal-up" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="skill-card-head">
+              <span class="skill-index">02</span>
+              <h3 class="skill-category-title">DESIGN</h3>
+            </div>
+
+            <div class="skill-visual skill-visual--orbit" aria-hidden="true">
+              <div class="orbit-ring orbit-ring--outer"></div>
+              <div class="orbit-ring orbit-ring--inner"></div>
+              <div class="orbit-core"></div>
+            </div>
+
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-bullet" aria-hidden="true"></span>
+                <span>UI/UX Design</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet" aria-hidden="true"></span>
+                <span>Interface Design</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet" aria-hidden="true"></span>
+                <span>Prototyping</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- DEVELOPMENT -->
+          <article class="skill-card skill-card--dev tilt-card reveal-up" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="skill-card-head">
+              <span class="skill-index">03</span>
+              <h3 class="skill-category-title">DEVELOPMENT</h3>
+            </div>
+
+            <div class="skill-visual skill-visual--matrix" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+            </div>
+
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-bullet" aria-hidden="true"></span>
+                <span>Frontend Development</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet" aria-hidden="true"></span>
+                <span>Backend Development</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet" aria-hidden="true"></span>
+                <span>Web Development</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet" aria-hidden="true"></span>
+                <span>Android App Development</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 5: PROJECT SHOWCASE
+         ========================================================= -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header projects-header reveal-up">
+          <div>
+            <span class="section-kicker">03 / SELECTED WORKS</span>
+            <h2 id="projects-heading" class="section-title">THINGS I'VE BUILT.</h2>
+            <p class="section-lead">
+              A curated showcase of live web platforms, interactive interfaces, and AI-powered applications I've engineered.
+            </p>
+          </div>
+          <div class="project-filters" role="group" aria-label="Filter projects by category">
+            <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Websites</button>
+            <button type="button" class="filter-btn" data-filter="app" aria-pressed="false">Apps</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Gamer's Grub -->
+          <article class="project-card tilt-card reveal-up" data-tilt data-category="web">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="project-media">
+              <div class="project-visual" role="img" aria-label="Gamer's Grub gaming destination website preview">
+                <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <radialGradient id="p1g" cx="70%" cy="28%" r="68%">
+                      <stop offset="0%" stop-color="#E51B23" stop-opacity="0.58"/>
+                      <stop offset="55%" stop-color="#7546FF" stop-opacity="0.22"/>
+                      <stop offset="100%" stop-color="#080808" stop-opacity="1"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="600" height="360" fill="url(#p1g)"/>
+                  <g stroke="#ffffff" stroke-opacity="0.07" stroke-width="1">
+                    <line x1="0" y1="90" x2="600" y2="90"/><line x1="0" y1="180" x2="600" y2="180"/><line x1="0" y1="270" x2="600" y2="270"/>
+                    <line x1="150" y1="0" x2="150" y2="360"/><line x1="300" y1="0" x2="300" y2="360"/><line x1="450" y1="0" x2="450" y2="360"/>
+                  </g>
+                  <rect x="58" y="56" width="484" height="248" rx="16" fill="#101015" fill-opacity="0.92" stroke="#ffffff" stroke-opacity="0.14"/>
+                  <circle cx="86" cy="82" r="5" fill="#E51B23"/><circle cx="104" cy="82" r="5" fill="#FFD84D"/><circle cx="122" cy="82" r="5" fill="#7546FF"/>
+                  <rect x="420" y="72" width="96" height="22" rx="11" fill="#1d1d26" stroke="#FFD84D" stroke-opacity="0.5"/>
+                  <circle cx="436" cy="83" r="5" fill="#FFD84D"/>
+                  <rect x="448" y="79" width="54" height="8" rx="4" fill="#FFD84D" fill-opacity="0.85"/>
+                  <rect x="86" y="122" width="220" height="22" rx="4" fill="#ffffff" fill-opacity="0.9"/>
+                  <rect x="86" y="156" width="175" height="10" rx="3" fill="#A0A0A0" fill-opacity="0.55"/>
+                  <rect x="86" y="176" width="140" height="10" rx="3" fill="#A0A0A0" fill-opacity="0.38"/>
+                  <rect x="86" y="218" width="124" height="36" rx="18" fill="#E51B23"/>
+                  <!-- Controller Emblem -->
+                  <rect x="348" y="118" width="164" height="150" rx="14" fill="#171720" stroke="#E51B23" stroke-opacity="0.45"/>
+                  <path d="M396 178 H464 C478 178 486 192 482 212 L476 226 C473 233 464 234 458 227 L448 215 H412 L402 227 C396 234 387 233 384 226 L378 212 C374 192 382 178 396 178 Z" fill="none" stroke="#FFD84D" stroke-width="2.5"/>
+                  <line x1="404" y1="196" x2="416" y2="196" stroke="#ffffff" stroke-width="2.5"/>
+                  <line x1="410" y1="190" x2="410" y2="202" stroke="#ffffff" stroke-width="2.5"/>
+                  <circle cx="452" cy="192" r="3" fill="#E51B23"/><circle cx="460" cy="200" r="3" fill="#FFD84D"/>
+                </svg>
+              </div>
+              <span class="project-badge">GAMING WEB</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Gamer's Grub</h3>
+              <p class="project-desc">
+                An interactive 3D-intro gaming cafe and community platform built to play, compete, collect coins, and explore curated games.
+              </p>
+              <ul class="tech-list" aria-label="Technologies used">
+                <li class="tech-tag">HTML5</li>
+                <li class="tech-tag">CSS3 3D</li>
+                <li class="tech-tag">JavaScript</li>
+                <li class="tech-tag">Interactive UI</li>
+              </ul>
+              <a href="https://vilog7.github.io/gamesgrub/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                <span>Visit Live Site</span>
+                <span aria-hidden="true">&nearr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Native Kolkata -->
+          <article class="project-card tilt-card reveal-up" data-tilt data-category="web">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="project-media">
+              <div class="project-visual" role="img" aria-label="Native Kolkata heritage, taste and culture website preview">
+                <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <radialGradient id="p2g" cx="50%" cy="32%" r="68%">
+                      <stop offset="0%" stop-color="#FFD84D" stop-opacity="0.48"/>
+                      <stop offset="55%" stop-color="#E51B23" stop-opacity="0.22"/>
+                      <stop offset="100%" stop-color="#080808" stop-opacity="1"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="600" height="360" fill="url(#p2g)"/>
+                  <rect x="58" y="56" width="484" height="248" rx="16" fill="#111012" fill-opacity="0.9" stroke="#FFD84D" stroke-opacity="0.22"/>
+                  <!-- Architectural Arch & Bridge Motif -->
+                  <path d="M120 246 Q300 110 480 246" fill="none" stroke="#FFD84D" stroke-width="2.2" stroke-opacity="0.8"/>
+                  <line x1="180" y1="204" x2="180" y2="246" stroke="#FFD84D" stroke-opacity="0.45"/>
+                  <line x1="240" y1="178" x2="240" y2="246" stroke="#FFD84D" stroke-opacity="0.45"/>
+                  <line x1="300" y1="168" x2="300" y2="246" stroke="#FFD84D" stroke-opacity="0.65"/>
+                  <line x1="360" y1="178" x2="360" y2="246" stroke="#FFD84D" stroke-opacity="0.45"/>
+                  <line x1="420" y1="204" x2="420" y2="246" stroke="#FFD84D" stroke-opacity="0.45"/>
+                  <line x1="96" y1="246" x2="504" y2="246" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5"/>
+                  <rect x="195" y="94" width="210" height="18" rx="4" fill="#ffffff" fill-opacity="0.88"/>
+                  <rect x="230" y="122" width="140" height="9" rx="3" fill="#FFD84D" fill-opacity="0.7"/>
+                  <rect x="246" y="264" width="108" height="22" rx="11" fill="#E51B23" fill-opacity="0.85"/>
+                </svg>
+              </div>
+              <span class="project-badge">CULTURAL WEB</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Native Kolkata</h3>
+              <p class="project-desc">
+                An editorial web experience celebrating Kolkata's timeless heritage, iconic flavors, and cultural soul through immersive visual storytelling.
+              </p>
+              <ul class="tech-list" aria-label="Technologies used">
+                <li class="tech-tag">Frontend</li>
+                <li class="tech-tag">Visual Design</li>
+                <li class="tech-tag">Responsive UI</li>
+                <li class="tech-tag">Netlify</li>
+              </ul>
+              <a href="https://snazzy-queijadas-f68817.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-project">
+                <span>Visit Live Site</span>
+                <span aria-hidden="true">&nearr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Learnn FeesSystem -->
+          <article class="project-card tilt-card reveal-up" data-tilt data-category="web">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="project-media">
+              <div class="project-visual" role="img" aria-label="Learnn FeesSystem management platform preview">
+                <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <radialGradient id="p3g" cx="72%" cy="68%" r="70%">
+                      <stop offset="0%" stop-color="#7546FF" stop-opacity="0.5"/>
+                      <stop offset="52%" stop-color="#E51B23" stop-opacity="0.22"/>
+                      <stop offset="100%" stop-color="#080808" stop-opacity="1"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="600" height="360" fill="url(#p3g)"/>
+                  <rect x="56" y="54" width="122" height="252" rx="12" fill="#121218" stroke="#ffffff" stroke-opacity="0.12"/>
+                  <rect x="74" y="78" width="86" height="12" rx="4" fill="#7546FF" fill-opacity="0.8"/>
+                  <rect x="74" y="106" width="72" height="9" rx="3" fill="#ffffff" fill-opacity="0.25"/>
+                  <rect x="74" y="126" width="80" height="9" rx="3" fill="#ffffff" fill-opacity="0.18"/>
+                  <rect x="74" y="146" width="64" height="9" rx="3" fill="#ffffff" fill-opacity="0.18"/>
+                  <rect x="194" y="54" width="350" height="116" rx="12" fill="#121218" stroke="#7546FF" stroke-opacity="0.45"/>
+                  <!-- 12-Month Status Grid -->
+                  <g fill="#FFD84D" fill-opacity="0.82">
+                    <rect x="214" y="84" width="38" height="24" rx="5"/><rect x="260" y="84" width="38" height="24" rx="5"/>
+                    <rect x="306" y="84" width="38" height="24" rx="5"/><rect x="352" y="84" width="38" height="24" rx="5"/>
+                    <rect x="398" y="84" width="38" height="24" rx="5"/><rect x="444" y="84" width="38" height="24" rx="5" fill="#E51B23"/>
+                    <rect x="214" y="118" width="38" height="24" rx="5"/><rect x="260" y="118" width="38" height="24" rx="5"/>
+                    <rect x="306" y="118" width="38" height="24" rx="5"/><rect x="352" y="118" width="38" height="24" rx="5" fill="#2a2a35"/>
+                  </g>
+                  <rect x="194" y="186" width="168" height="120" rx="12" fill="#121218" stroke="#FFD84D" stroke-opacity="0.4"/>
+                  <!-- Dynamic QR Motif -->
+                  <rect x="248" y="210" width="60" height="60" rx="6" fill="none" stroke="#ffffff" stroke-opacity="0.8" stroke-width="2"/>
+                  <rect x="256" y="218" width="16" height="16" fill="#FFD84D"/><rect x="284" y="218" width="16" height="16" fill="#FFD84D"/>
+                  <rect x="256" y="246" width="16" height="16" fill="#FFD84D"/><rect x="284" y="246" width="16" height="16" fill="#E51B23"/>
+                  <rect x="376" y="186" width="168" height="120" rx="12" fill="#121218" stroke="#E51B23" stroke-opacity="0.4"/>
+                  <rect x="398" y="214" width="120" height="12" rx="4" fill="#ffffff" fill-opacity="0.8"/>
+                  <rect x="398" y="238" width="94" height="10" rx="4" fill="#A0A0A0" fill-opacity="0.45"/>
+                  <rect x="398" y="264" width="104" height="24" rx="12" fill="#E51B23"/>
+                </svg>
+              </div>
+              <span class="project-badge">WEB APPLICATION</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Learnn FeesSystem</h3>
+              <p class="project-desc">
+                Secure fee management system with universal authentication, School &rarr; Class &rarr; Student filtering, dynamic UPI/GPay QR payment pages, a 12-month tracker, and SMS alerts.
+              </p>
+              <ul class="tech-list" aria-label="Technologies used">
+                <li class="tech-tag">Web App</li>
+                <li class="tech-tag">Authentication</li>
+                <li class="tech-tag">UPI &amp; QR</li>
+                <li class="tech-tag">Dashboard</li>
+              </ul>
+              <a href="https://vilog7.github.io/FeesSystem/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                <span>Visit Live Site</span>
+                <span aria-hidden="true">&nearr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: FreeVault -->
+          <article class="project-card tilt-card reveal-up" data-tilt data-category="web">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="project-media">
+              <div class="project-visual" role="img" aria-label="FreeVault curated resource platform preview">
+                <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <radialGradient id="p4g" cx="35%" cy="30%" r="70%">
+                      <stop offset="0%" stop-color="#E51B23" stop-opacity="0.48"/>
+                      <stop offset="50%" stop-color="#FFD84D" stop-opacity="0.18"/>
+                      <stop offset="100%" stop-color="#080808" stop-opacity="1"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="600" height="360" fill="url(#p4g)"/>
+                  <rect x="58" y="52" width="484" height="256" rx="16" fill="#0e0e13" stroke="#ffffff" stroke-opacity="0.14"/>
+                  <!-- 9 Glowing Vault Cards Grid -->
+                  <g stroke="#ffffff" stroke-opacity="0.14" fill="#171720">
+                    <rect x="88" y="84" width="128" height="54" rx="9" stroke="#FFD84D" stroke-opacity="0.55"/>
+                    <rect x="236" y="84" width="128" height="54" rx="9"/>
+                    <rect x="384" y="84" width="128" height="54" rx="9" stroke="#E51B23" stroke-opacity="0.5"/>
+                    <rect x="88" y="153" width="128" height="54" rx="9"/>
+                    <rect x="236" y="153" width="128" height="54" rx="9" stroke="#7546FF" stroke-opacity="0.6"/>
+                    <rect x="384" y="153" width="128" height="54" rx="9"/>
+                    <rect x="88" y="222" width="128" height="54" rx="9" stroke="#E51B23" stroke-opacity="0.45"/>
+                    <rect x="236" y="222" width="128" height="54" rx="9"/>
+                    <rect x="384" y="222" width="128" height="54" rx="9" stroke="#FFD84D" stroke-opacity="0.45"/>
+                  </g>
+                  <circle cx="300" cy="180" r="14" fill="#7546FF" fill-opacity="0.85"/>
+                </svg>
+              </div>
+              <span class="project-badge">RESOURCE HUB</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">FreeVault</h3>
+              <p class="project-desc">
+                A glowing dark-mode resource vault organizing 9 curated digital tools and instant step-by-step unlock guides inside a sleek one-click card interface.
+              </p>
+              <ul class="tech-list" aria-label="Technologies used">
+                <li class="tech-tag">HTML5</li>
+                <li class="tech-tag">CSS3</li>
+                <li class="tech-tag">JavaScript</li>
+                <li class="tech-tag">UI/UX</li>
+              </ul>
+              <a href="https://vilog7.github.io/Vault/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                <span>Visit Live Site</span>
+                <span aria-hidden="true">&nearr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5: UltronAI -->
+          <article class="project-card tilt-card reveal-up" data-tilt data-project="ultron-ai" data-category="app">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="project-media">
+              <div class="project-visual" role="img" aria-label="UltronAI mobile AI assistant application preview">
+                <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <radialGradient id="p5g" cx="50%" cy="40%" r="68%">
+                      <stop offset="0%" stop-color="#E51B23" stop-opacity="0.52"/>
+                      <stop offset="52%" stop-color="#7546FF" stop-opacity="0.28"/>
+                      <stop offset="100%" stop-color="#080808" stop-opacity="1"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="600" height="360" fill="url(#p5g)"/>
+                  <rect x="215" y="30" width="170" height="300" rx="26" fill="#0d0d12" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2"/>
+                  <rect x="268" y="44" width="64" height="6" rx="3" fill="#2a2a33"/>
+                  <!-- AI Neural Core -->
+                  <circle cx="300" cy="136" r="42" fill="#161620" stroke="#E51B23" stroke-width="2"/>
+                  <circle cx="300" cy="136" r="26" fill="none" stroke="#FFD84D" stroke-width="1.5" stroke-dasharray="8 5"/>
+                  <circle cx="300" cy="136" r="10" fill="#E51B23"/>
+                  <!-- Chat / Command Stream -->
+                  <rect x="236" y="198" width="104" height="24" rx="8" fill="#1b1b26" stroke="#7546FF" stroke-opacity="0.5"/>
+                  <rect x="260" y="232" width="104" height="24" rx="8" fill="#E51B23" fill-opacity="0.24" stroke="#E51B23" stroke-opacity="0.6"/>
+                  <rect x="236" y="272" width="128" height="32" rx="16" fill="#16161f" stroke="#ffffff" stroke-opacity="0.16"/>
+                </svg>
+              </div>
+              <span class="project-badge">AI APP</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">UltronAI</h3>
+              <p class="project-desc">
+                An AI-powered application built with a futuristic dark interface for fast intelligent conversations, smart assistance, and streamlined everyday workflows.
+              </p>
+              <ul class="tech-list" aria-label="Technologies used">
+                <li class="tech-tag">App Development</li>
+                <li class="tech-tag">AI Integration</li>
+                <li class="tech-tag">Dark UI/UX</li>
+              </ul>
+              <button type="button" class="btn-project" data-open-project="ultron-ai">
+                <span>View App Details</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 6: CREATIVE PROCESS
+         ========================================================= -->
+    <section id="process" class="section process-section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">04 / METHODOLOGY</span>
+          <h2 id="process-heading" class="section-title">HOW I CREATE.</h2>
+          <p class="section-lead">
+            Every project moves through a disciplined five-stage sequence — from raw spark to cinematic launch.
+          </p>
+        </div>
+
+        <div id="process-timeline" class="timeline">
+          <div class="timeline-track" aria-hidden="true">
+            <div id="timeline-progress" class="timeline-progress"></div>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-step reveal-up">
+              <div class="timeline-node" aria-hidden="true"><span>01</span></div>
+              <div class="timeline-card">
+                <span class="timeline-label">01 &mdash; IDEA</span>
+                <h3 class="timeline-title">Vision &amp; Direction</h3>
+                <p class="timeline-desc">Deconstructing the core objective, exploring mood, narrative pacing, and defining a sharp creative direction.</p>
+              </div>
+            </li>
+
+            <li class="timeline-step reveal-up">
+              <div class="timeline-node" aria-hidden="true"><span>02</span></div>
+              <div class="timeline-card">
+                <span class="timeline-label">02 &mdash; DESIGN</span>
+                <h3 class="timeline-title">Interface &amp; Visual Systems</h3>
+                <p class="timeline-desc">Crafting dark-mode aesthetics, typography hierarchies, interactive prototypes, and visual storyboards.</p>
+              </div>
+            </li>
+
+            <li class="timeline-step reveal-up">
+              <div class="timeline-node" aria-hidden="true"><span>03</span></div>
+              <div class="timeline-card">
+                <span class="timeline-label">03 &mdash; DEVELOPMENT</span>
+                <h3 class="timeline-title">Engineering &amp; Motion</h3>
+                <p class="timeline-desc">Bringing designs to life with clean, performant code, fluid animations, and reliable backend logic.</p>
+              </div>
+            </li>
+
+            <li class="timeline-step reveal-up">
+              <div class="timeline-node" aria-hidden="true"><span>04</span></div>
+              <div class="timeline-card">
+                <span class="timeline-label">04 &mdash; REFINEMENT</span>
+                <h3 class="timeline-title">Polish &amp; Precision</h3>
+                <p class="timeline-desc">Stress-testing interactions across devices, tuning timing curves, lighting details, and frame-rate smoothness.</p>
+              </div>
+            </li>
+
+            <li class="timeline-step reveal-up">
+              <div class="timeline-node" aria-hidden="true"><span>05</span></div>
+              <div class="timeline-card">
+                <span class="timeline-label">05 &mdash; LAUNCH</span>
+                <h3 class="timeline-title">Deployment &amp; Impact</h3>
+                <p class="timeline-desc">Delivering a cohesive, high-impact experience built to stand out and perform cleanly in the real world.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 7: CONTACT
+         ========================================================= -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">05 / TRANSMISSION</span>
+          <h2 id="contact-heading" class="section-title">LET'S CREATE SOMETHING EXTRAORDINARY.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-up">
+            <p class="contact-intro">
+              Have a project, collaboration, or ambitious digital idea in mind? Send a message directly or connect through the channels below.
+            </p>
+
+            <div class="contact-detail-card">
+              <span class="contact-detail-label">CREATOR</span>
+              <p class="contact-detail-value">Vihaan Bhattacharjee</p>
+            </div>
+
+            <div class="contact-detail-card">
+              <span class="contact-detail-label">DIRECT EMAIL</span>
+              <div class="contact-email-row">
+                <a href="mailto:vihaan7vb@gmail.com" class="contact-email-link">vihaan7vb@gmail.com</a>
+                <button type="button" id="copy-email-btn" class="copy-btn" aria-label="Copy email address">Copy</button>
+              </div>
+            </div>
+
+            <div class="social-block">
+              <span class="contact-detail-label">SOCIAL CHANNELS</span>
+              <div class="social-links">
+                <a href="https://github.com/Vilog7" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub profile Vilog7">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.02c-3.2.7-3.88-1.38-3.88-1.38-.52-1.33-1.28-1.68-1.28-1.68-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.02 11.02 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                  <span>GitHub &middot; Vilog7</span>
+                </a>
+                <a href="https://www.instagram.com/cyberhacker_777/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Instagram @cyberhacker_777">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                  <span>@cyberhacker_777</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form reveal-up" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Name</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                class="form-input"
+                placeholder="Vihaan Bhattacharjee"
+                autocomplete="name"
+                aria-describedby="err-name"
+                required
+              >
+              <span id="err-name" class="field-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                class="form-input"
+                placeholder="vihaan7vb@gmail.com"
+                autocomplete="email"
+                aria-describedby="err-email"
+                required
+              >
+              <span id="err-email" class="field-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="5"
+                class="form-input form-textarea"
+                placeholder="Tell me about your vision, project, or idea..."
+                aria-describedby="err-message"
+                required
+              ></textarea>
+              <span id="err-message" class="field-error" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+              <span class="btn-label">Send Message</span>
+              <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+            </button>
+
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Detail Modal (Native HTML5 Dialog) -->
+  <dialog id="project-modal" class="project-modal" aria-labelledby="modal-title">
+    <div class="modal-surface">
+      <button type="button" id="modal-close" class="modal-close" aria-label="Close project preview">&times;</button>
+      <span id="modal-badge" class="modal-badge">PROJECT</span>
+      <h3 id="modal-title" class="modal-title">Project Title</h3>
+      <p id="modal-desc" class="modal-desc"></p>
+      <div class="modal-meta">
+        <span class="modal-meta-label">TECHNOLOGIES</span>
+        <ul id="modal-tech" class="tech-list"></ul>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Minimal Cinematic Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">VIHAAN &mdash; DARK. CINEMATIC. CREATIVE. FUTURISTIC.</p>
+      <a href="#home" class="back-to-top" aria-label="Back to top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
